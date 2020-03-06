@@ -26,14 +26,15 @@ void bubbleSort(int *v, int tam){
 */
 
 void selectionSort(int *v, int tam){
-  int menor=100000;
-  for(size_t i=0; i<tam; i++){
+  int menor;
+  //for(size_t i=0; i<tam; i++){
+    menor = 0;
     for(size_t i = 0; i<tam-1; i++){
-      if (v[i]<menor){
-        menor = v[i];
+      if (v[i]<v[menor]){
+        menor = i;
       }  
     }
-  }
+  //}
 }
 
 
